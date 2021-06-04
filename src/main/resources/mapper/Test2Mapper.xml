@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yr.sql.mybatis.mapper.Test2Mapper">
+  <resultMap id="BaseResultMap" type="com.yr.sql.mybatis.pojo.Test2">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="t_num" jdbcType="INTEGER" property="tNum" />
+    <result column="t_name" jdbcType="VARCHAR" property="tName" />
+  </resultMap>
+</mapper>

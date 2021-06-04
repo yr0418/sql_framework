@@ -1,0 +1,54 @@
+server:
+  port: 88
+spring:
+  profiles:
+    active: dev
+  freemarker:
+    cache: false
+    request-context-attribute: request
+  mvc:
+    view:
+      prefix: /templates/
+      suffix: .ftl
+  datasource:
+    data: classpath:db/data.sql
+    schema: classpath:db/schema.sql
+    username: root
+    password: yr19990418
+    url: jdbc:mysql://127.0.0.1:3306/test?characterEncoding=utf8&useSSL=false&serverTimezone=Asia/Shanghai
+    driver-class-name: com.mysql.jdbc.Driver
+
+logging:
+  level:
+    com:
+      yr:
+        sql: DEBUG
+      jdbc: ERROR
+      jdbc.resultsettable: ERROR
+      org:
+        mybatis: INFO
+        springframework: INFO
+        springframework.security: INFO
+      root: INFO
+      tk:
+        mybatis: INFO
+  file:
+    name: spring.log
+
+mapper:
+  identity: MYSQL
+  mappers: com.yr.sql.mybatis.CustomMapper
+  not-empty: false
+
+mybatis:
+  mapper-locations: classpath:mapper/*.xml
+  type-aliases-package: com.yr.sql.mybatis.pojo
+  configuration:
+    map-underscore-to-camel-case: true
+    cache-enabled: true
+
+pagehelper:
+  helperDialect: mysql
+  params: count=countSql
+  reasonable: true
+  supportMethodsArguments: true

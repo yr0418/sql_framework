@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yr.sql.mybatis.mapper.Test1Mapper">
+  <resultMap id="BaseResultMap" type="com.yr.sql.mybatis.pojo.Test1">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="id" jdbcType="BIGINT" property="id" />
+    <result column="type_int" jdbcType="INTEGER" property="typeInt" />
+    <result column="type_string" jdbcType="VARCHAR" property="typeString" />
+    <result column="type_double" jdbcType="DOUBLE" property="typeDouble" />
+    <result column="type_date" jdbcType="TIMESTAMP" property="typeDate" />
+    <result column="type_long" jdbcType="BIGINT" property="typeLong" />
+    <result column="same_id" jdbcType="INTEGER" property="sameId" />
+    <result column="same_val" jdbcType="VARCHAR" property="sameVal" />
+    <result column="user_id" jdbcType="BIGINT" property="userId" />
+  </resultMap>
+</mapper>
