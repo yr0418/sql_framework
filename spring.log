@@ -46,3 +46,48 @@
 2021-05-13 20:54:18.445  INFO 2344 --- [http-nio-88-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
 2021-05-13 20:54:18.446  INFO 2344 --- [http-nio-88-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
 2021-05-13 20:54:18.446  INFO 2344 --- [http-nio-88-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2021-07-09 22:35:38.082  INFO 5960 --- [main] com.yr.sql.SqlApplication                : Starting SqlApplication using Java 1.8.0_191 on LAPTOP-EPU3S7IJ with PID 5960 (D:\Java\Github\sql_framework\target\classes started by Alone-Wolf in D:\Java\Github\sql_framework)
+2021-07-09 22:35:38.084 DEBUG 5960 --- [main] com.yr.sql.SqlApplication                : Running with Spring Boot v2.4.1, Spring v5.3.2
+2021-07-09 22:35:38.085  INFO 5960 --- [main] com.yr.sql.SqlApplication                : The following profiles are active: dev
+2021-07-09 22:35:38.788  WARN 5960 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.yr.sql]' package. Please check your configuration.
+2021-07-09 22:35:39.064  INFO 5960 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 88 (http)
+2021-07-09 22:35:39.069  INFO 5960 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-07-09 22:35:39.070  INFO 5960 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-07-09 22:35:39.138  INFO 5960 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-07-09 22:35:39.138  INFO 5960 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1021 ms
+2021-07-09 22:35:39.264  INFO 5960 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-07-09 22:35:39.266  WARN 5960 --- [main] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2021-07-09 22:35:39.431  INFO 5960 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-07-09 22:35:40.072  INFO 5960 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-07-09 22:35:40.157  INFO 5960 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
+2021-07-09 22:35:40.158  INFO 5960 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
+2021-07-09 22:35:40.158  INFO 5960 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
+2021-07-09 22:35:40.158  INFO 5960 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear EntityHelper entityTableMap cache.
+2021-07-09 22:35:40.288  WARN 5960 --- [main] o.s.b.a.f.FreeMarkerAutoConfiguration    : Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.checkTemplateLocation=false)
+2021-07-09 22:35:40.368  INFO 5960 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 88 (http) with context path ''
+2021-07-09 22:35:40.369  INFO 5960 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2021-07-09 22:35:40.379  INFO 5960 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2021-07-09 22:35:40.403  INFO 5960 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2021-07-09 22:35:40.500  INFO 5960 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: deleteAllUsingDELETE_1
+2021-07-09 22:35:40.502  INFO 5960 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: deleteByIdUsingDELETE_1
+2021-07-09 22:35:40.505  INFO 5960 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: deleteByInstanceUsingDELETE_1
+2021-07-09 22:35:40.506  INFO 5960 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: insertUsingPOST_1
+2021-07-09 22:35:40.507  INFO 5960 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: insertListUsingPOST_1
+2021-07-09 22:35:40.511  INFO 5960 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: searchUsingPOST_1
+2021-07-09 22:35:40.512  INFO 5960 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: searchAllUsingPOST_1
+2021-07-09 22:35:40.514  INFO 5960 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: searchByQueryUsingPOST_1
+2021-07-09 22:35:40.515  INFO 5960 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: searchByTopUsingPOST_1
+2021-07-09 22:35:40.516  INFO 5960 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: selectByIdUsingGET_1
+2021-07-09 22:35:40.517  INFO 5960 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: updateUsingPOST_1
+2021-07-09 22:35:40.520  INFO 5960 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: deleteAllUsingDELETE_2
+2021-07-09 22:35:40.521  INFO 5960 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: deleteByIdUsingDELETE_2
+2021-07-09 22:35:40.523  INFO 5960 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: deleteByInstanceUsingDELETE_2
+2021-07-09 22:35:40.525  INFO 5960 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: insertUsingPOST_2
+2021-07-09 22:35:40.526  INFO 5960 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: insertListUsingPOST_2
+2021-07-09 22:35:40.528  INFO 5960 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: searchUsingPOST_2
+2021-07-09 22:35:40.530  INFO 5960 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: searchAllUsingPOST_2
+2021-07-09 22:35:40.531  INFO 5960 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: searchByQueryUsingPOST_2
+2021-07-09 22:35:40.532  INFO 5960 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: searchByTopUsingPOST_2
+2021-07-09 22:35:40.533  INFO 5960 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: selectByIdUsingGET_2
+2021-07-09 22:35:40.534  INFO 5960 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: updateUsingPOST_2
+2021-07-09 22:35:40.552  INFO 5960 --- [main] com.yr.sql.SqlApplication                : Started SqlApplication in 3.172 seconds (JVM running for 4.637)
