@@ -25,7 +25,7 @@ public class PaginatedResult implements Serializable {
     private String message;
     private Object data;
     private Pagination pagination;
-    private Dictionary<String, Object> dictionary; // dictionary of related result
+    private Dictionary<String, Object> dictionary;    // dictionary of related result
 
     public PaginatedResult() {
         this.version = Constant.VERSION;
@@ -45,8 +45,8 @@ public class PaginatedResult implements Serializable {
     @ToString
     @NoArgsConstructor
     public class Pagination {
-        private int current = 0; // Current page number
-        private int total = 0; // Number of total elements
+        private int current = 0;    // Current page number
+        private int total = 0;      // Number of total elements
         private int pageSize = 0;
         private int pageCount = 0;
         private Boolean previous;
