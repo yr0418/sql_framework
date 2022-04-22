@@ -14,9 +14,25 @@ import java.util.List;
 
 @Data
 public class QueryParameter {
+
+    /**
+     * 字段名
+     */
     private String type;
+
+    /**
+     * 查询方式
+     */
     private QueryParameterMethod method;
+
+    /**
+     * 字段值
+     */
     private Object value;
+
+    /**
+     * 字段值类型
+     */
     private QueryParameterType valueType;
 
     public QueryParameter(String type, QueryParameterMethod method, Long value) {
@@ -51,6 +67,13 @@ public class QueryParameter {
         this.type = type;
         this.method = method;
         this.valueType = QueryParameterType.LIST;
+        this.value = value;
+    }
+
+    public QueryParameter(String type, QueryParameterMethod method, Double value) {
+        this.type = type;
+        this.method = method;
+        this.valueType = QueryParameterType.DOUBLE;
         this.value = value;
     }
 

@@ -98,8 +98,8 @@ public class BaseController<T> {
      * @param table    表
      * @return 查询结果
      */
-    @ApiOperation(value = "分页关联查询")
-    @PostMapping(value = "search/related")
+    //@ApiOperation(value = "分页关联查询")
+    ////@PostMapping(value = "search/related")
     public ResponseEntity<?> search(
             @RequestParam(value = "current", required = false, defaultValue =CURRENT_PAGE) Integer current,
             @RequestParam(value = "pageSize", required = false, defaultValue = PAGE_SIZE) Integer pageSize,

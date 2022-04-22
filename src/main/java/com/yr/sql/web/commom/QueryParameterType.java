@@ -7,5 +7,5 @@ package com.yr.sql.web.commom;
  * @date: 2021-03-21 10:36
  **/
 public enum QueryParameterType {
-    LONG, INT, DATE, STRING, LIST
+    LONG, INT, DATE, STRING, LIST, DOUBLE,
 }

@@ -9,7 +9,7 @@ import java.util.Dictionary;
 import java.util.Hashtable;
 
 /**
- * @moduleName: Result
+ * @moduleName:  Result
  * @description: 自定义返回结果值
  * @author: 杨睿
  * @date: 2021-03-20 10:10

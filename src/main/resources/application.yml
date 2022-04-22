@@ -1,8 +1,6 @@
 server:
   port: 88
 spring:
-  profiles:
-    active: dev
   freemarker:
     cache: false
     request-context-attribute: request
@@ -15,7 +13,7 @@ spring:
     schema: classpath:db/schema.sql
     username: root
     password: yr19990418
-    url: jdbc:mysql://127.0.0.1:3306/test?characterEncoding=utf8&useSSL=false&serverTimezone=Asia/Shanghai
+    url: jdbc:mysql://127.0.0.1:3306/sql?characterEncoding=utf8&useSSL=false&serverTimezone=Asia/Shanghai
     driver-class-name: com.mysql.jdbc.Driver
 
 logging:

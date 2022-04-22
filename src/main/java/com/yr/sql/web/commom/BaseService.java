@@ -444,9 +444,14 @@ public class BaseService<T> {
             case GREATER:
                 criteria.andGreaterThan(parameter.getType(), value);
                 break;
+            case GREATER_OR_EQUAL:
+                criteria.andGreaterThanOrEqualTo(parameter.getType(), value);
+                break;
             case LESS:
                 criteria.andLessThan(parameter.getType(), value);
                 break;
+            case LESS_OR_EQUAL:
+                criteria.andLessThanOrEqualTo(parameter.getType(), value);
             default:
                 break;
         }
